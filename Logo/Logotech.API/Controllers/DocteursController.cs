@@ -63,15 +63,8 @@ namespace Logotech.API.Controllers
         public async Task<IActionResult> UpdateDocteur(int id, DocteurForUpdateDto docteurForUpdateDto)
         {
             var DocteurFromRepo = await _repo.GetDocteur(id);
-            
-            DocteurFromRepo.Inami = docteurForUpdateDto.Inami;
-            DocteurFromRepo.Nom = docteurForUpdateDto.Nom;
-            DocteurFromRepo.Prenom = docteurForUpdateDto.Prenom;
-            DocteurFromRepo.Email = docteurForUpdateDto.Email;
-            DocteurFromRepo.TelFixe = docteurForUpdateDto.TelFixe;
-            DocteurFromRepo.Gsm = docteurForUpdateDto.Gsm;
-            DocteurFromRepo.Specialisation = docteurForUpdateDto.Specialisation;
-            DocteurFromRepo.Fonction = docteurForUpdateDto.Fonction;
+
+            _mapper.Map(docteurForUpdateDto, DocteurFromRepo);
             
             if (await _repo.SaveAll())
              return NoContent();

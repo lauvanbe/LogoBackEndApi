@@ -65,23 +65,25 @@ namespace Logotech.API.Controllers
         {
              var patientFromRepo = await _repo.GetPatient(id); 
 
-            patientFromRepo.Nom = patientForUpdateDto.Nom;
-            patientFromRepo.Prenom = patientForUpdateDto.Prenom;
-            patientFromRepo.DateNaissance = patientForUpdateDto.DateNaissance;
-            patientFromRepo.Email = patientForUpdateDto.Email;
-            patientFromRepo.TelFixe = patientForUpdateDto.TelFixe;
-            patientFromRepo.Gsm = patientForUpdateDto.Gsm;
-            patientFromRepo.PersonneContact = patientForUpdateDto.PersonneContact;
-            patientFromRepo.TelContact = patientForUpdateDto.TelContact;
-            patientFromRepo.Lateralite = patientForUpdateDto.Lateralite;
-            patientFromRepo.Anamnese = patientForUpdateDto.Anamnese;
-            patientFromRepo.Commentaire = patientForUpdateDto.Commentaire;
-            patientFromRepo.Adresse.Rue = patientForUpdateDto.Adresse.Rue;
-            patientFromRepo.Adresse.NumeroRue = patientForUpdateDto.Adresse.NumeroRue;
-            patientFromRepo.Adresse.BoitePostal = patientForUpdateDto.Adresse.BoitePostal;
-            patientFromRepo.Adresse.CodePostal = patientForUpdateDto.Adresse.CodePostal;
-            patientFromRepo.Adresse.Ville = patientForUpdateDto.Adresse.Ville;
-            patientFromRepo.Adresse.Pays = patientForUpdateDto.Adresse.Pays;
+             _mapper.Map(patientForUpdateDto, patientFromRepo);
+
+            // patientFromRepo.Nom = patientForUpdateDto.Nom;
+            // patientFromRepo.Prenom = patientForUpdateDto.Prenom;
+            // patientFromRepo.DateNaissance = patientForUpdateDto.DateNaissance;
+            // patientFromRepo.Email = patientForUpdateDto.Email;
+            // patientFromRepo.TelFixe = patientForUpdateDto.TelFixe;
+            // patientFromRepo.Gsm = patientForUpdateDto.Gsm;
+            // patientFromRepo.PersonneContact = patientForUpdateDto.PersonneContact;
+            // patientFromRepo.TelContact = patientForUpdateDto.TelContact;
+            // patientFromRepo.Lateralite = patientForUpdateDto.Lateralite;
+            // patientFromRepo.Anamnese = patientForUpdateDto.Anamnese;
+            // patientFromRepo.Commentaire = patientForUpdateDto.Commentaire;
+            // patientFromRepo.Adresse.Rue = patientForUpdateDto.Adresse.Rue;
+            // patientFromRepo.Adresse.NumeroRue = patientForUpdateDto.Adresse.NumeroRue;
+            // patientFromRepo.Adresse.BoitePostal = patientForUpdateDto.Adresse.BoitePostal;
+            // patientFromRepo.Adresse.CodePostal = patientForUpdateDto.Adresse.CodePostal;
+            // patientFromRepo.Adresse.Ville = patientForUpdateDto.Adresse.Ville;
+            // patientFromRepo.Adresse.Pays = patientForUpdateDto.Adresse.Pays;
             
             if (await _repo.SaveAll())
              return NoContent();
