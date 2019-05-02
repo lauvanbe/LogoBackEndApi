@@ -1,0 +1,14 @@
+C:\gitRepos\LogoWepApi\LogoWebApi\bin\Debug\netcoreapp2.2\LogoWebApi.deps.json
+C:\gitRepos\LogoWepApi\LogoWebApi\bin\Debug\netcoreapp2.2\LogoWebApi.runtimeconfig.json
+C:\gitRepos\LogoWepApi\LogoWebApi\bin\Debug\netcoreapp2.2\LogoWebApi.runtimeconfig.dev.json
+c:\gitRepos\LogoWepApi\LogoWebApi\bin\Debug\netcoreapp2.2\LogoWebApi.dll
+c:\gitRepos\LogoWepApi\LogoWebApi\bin\Debug\netcoreapp2.2\LogoWebApi.pdb
+c:\gitRepos\LogoWepApi\LogoWebApi\obj\Debug\netcoreapp2.2\LogoWebApi.csprojAssemblyReference.cache
+c:\gitRepos\LogoWepApi\LogoWebApi\obj\Debug\netcoreapp2.2\LogoWebApi.csproj.CoreCompileInputs.cache
+c:\gitRepos\LogoWepApi\LogoWebApi\obj\Debug\netcoreapp2.2\LogoWebApi.RazorAssemblyInfo.cache
+c:\gitRepos\LogoWepApi\LogoWebApi\obj\Debug\netcoreapp2.2\LogoWebApi.RazorAssemblyInfo.cs
+c:\gitRepos\LogoWepApi\LogoWebApi\obj\Debug\netcoreapp2.2\LogoWebApi.AssemblyInfoInputs.cache
+c:\gitRepos\LogoWepApi\LogoWebApi\obj\Debug\netcoreapp2.2\LogoWebApi.AssemblyInfo.cs
+c:\gitRepos\LogoWepApi\LogoWebApi\obj\Debug\netcoreapp2.2\LogoWebApi.RazorTargetAssemblyInfo.cache
+c:\gitRepos\LogoWepApi\LogoWebApi\obj\Debug\netcoreapp2.2\LogoWebApi.dll
+c:\gitRepos\LogoWepApi\LogoWebApi\obj\Debug\netcoreapp2.2\LogoWebApi.pdb

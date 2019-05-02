@@ -28,20 +28,6 @@ namespace Logotech.API.Data
             return await _context.Photos.Where(p => p.PatientId == patientId).FirstOrDefaultAsync(p => p.IsMain);
         }
 
-        public async Task<Docteur> GetDocteur(int id)
-        {
-            var praticien = await _context.Docteurs.Include(a => a.Adresse).FirstOrDefaultAsync(p => p.Id == id);
-
-            return praticien;
-        }
-
-        public async Task<IEnumerable<Docteur>> GetDocteurs()
-        {
-            var praticiens = await _context.Docteurs.ToListAsync();
-
-            return praticiens;
-        }
-
         public async Task<Patient> GetPatient(int id)
         {
             var patient = await _context.Patients.Include(a => a.Adresse).Include(p => p.Photos).FirstOrDefaultAsync(p => p.Id == id);
@@ -61,6 +47,20 @@ namespace Logotech.API.Data
             var photo = await _context.Photos.FirstOrDefaultAsync(p => p.Id == id);
 
             return photo;
+        }
+
+        public async Task<Docteur> GetDocteur(int id)
+        {
+            var praticien = await _context.Docteurs.FirstOrDefaultAsync(p => p.Id == id);
+
+            return praticien;
+        }
+
+        public async Task<IEnumerable<Docteur>> GetDocteurs()
+        {
+            var praticiens = await _context.Docteurs.ToListAsync();
+
+            return praticiens;
         }
 
         public async Task<bool> SaveAll()

@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Logotech.API.Data;
 using Logotech.API.Dtos;
+using Logotech.API.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -42,6 +43,23 @@ namespace Logotech.API.Controllers
             return Ok(patientToReturn);
         } 
 
+
+        [HttpPost()]
+        public async Task<IActionResult> AddPatient(PatientToAddDto patientToAddDto)
+        {
+            var patientToCreate = _mapper.Map<Patient>(patientToAddDto);
+
+            if(patientToCreate != null)
+            {
+                _repo.add(patientToCreate);
+            }
+                
+            if (await _repo.SaveAll())
+                return Ok();
+
+            return BadRequest("Ajout du patient impossible");         
+        }
+
         [HttpPut("edit/{id}")]
         public async Task<IActionResult> UpdatePatient(int id, PatientForUpdateDto patientForUpdateDto)
         {
@@ -61,6 +79,7 @@ namespace Logotech.API.Controllers
             patientFromRepo.Adresse.Rue = patientForUpdateDto.Adresse.Rue;
             patientFromRepo.Adresse.NumeroRue = patientForUpdateDto.Adresse.NumeroRue;
             patientFromRepo.Adresse.BoitePostal = patientForUpdateDto.Adresse.BoitePostal;
+            patientFromRepo.Adresse.CodePostal = patientForUpdateDto.Adresse.CodePostal;
             patientFromRepo.Adresse.Ville = patientForUpdateDto.Adresse.Ville;
             patientFromRepo.Adresse.Pays = patientForUpdateDto.Adresse.Pays;
             
@@ -84,7 +103,7 @@ namespace Logotech.API.Controllers
             if (await _repo.SaveAll())
                 return Ok();
 
-            return BadRequest("Suppression du patient pas possible");
+            return BadRequest("Suppression du patient impossible");
         }
 
     }

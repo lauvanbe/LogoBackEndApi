@@ -10,7 +10,6 @@ namespace Logotech.API.Data
          Task<User> Login(string username, string password);
          Task<bool> UserExists(string username);
          Task<IEnumerable<User>> GetUsers();
-
          Task<User> GetUser(int id);
     }
 }

@@ -41,9 +41,7 @@ namespace Logotech.API.Models
 
         [Display(Name = "Fonction")]
         [StringLength(55)]
-        public string Fonction { get; set; }             
-
-        public Adresse Adresse { get; set; }
+        public string Fonction { get; set; }
 
     }
 }

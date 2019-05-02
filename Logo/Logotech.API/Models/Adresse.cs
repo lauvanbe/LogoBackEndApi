@@ -32,5 +32,10 @@ namespace Logotech.API.Models
         [StringLength(55)]
         [Display(Name = "Pays")]
         public string Pays { get; set; }
+
+        public Patient Patient { get; set; }
+        
+        public int PatientId { get; set; }
+
     }
 }

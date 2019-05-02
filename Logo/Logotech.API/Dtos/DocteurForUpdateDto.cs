@@ -1,9 +1,8 @@
-using System.Collections.Generic;
 using Logotech.API.Models;
 
 namespace Logotech.API.Dtos
 {
-    public class DocteurForDetailDto
+    public class DocteurForUpdateDto
     {
         public int Id { get; set; }
         public int Inami { get; set; }
@@ -13,6 +12,6 @@ namespace Logotech.API.Dtos
         public int TelFixe { get; set; }
         public int Gsm { get; set; }
         public string Specialisation { get; set; }
-        public string Fonction { get; set; }
+        public string Fonction { get; set; }    
     }
 }

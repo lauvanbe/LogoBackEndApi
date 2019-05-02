@@ -80,7 +80,7 @@ namespace Logotech.API.Data
 
         public async Task<User> GetUser(int id)
         {
-            var user = await _context.Users.Include(a => a.Adresse).FirstOrDefaultAsync(u => u.Id == id);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
 
             return user;
         }

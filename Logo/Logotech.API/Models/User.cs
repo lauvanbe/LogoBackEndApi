@@ -42,7 +42,5 @@ namespace Logotech.API.Models
         [Required(ErrorMessage = "Veuillez spécifier si les déplacements sont possible.")]
         [Display(Name = "Visites à domicile")]
         public string Deplacement { get; set; }
-
-        public Adresse Adresse { get; set; }
     }
 }

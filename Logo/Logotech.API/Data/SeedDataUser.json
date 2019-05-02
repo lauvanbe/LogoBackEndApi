@@ -8,15 +8,7 @@
       "Email": "terryhenson@comtrail.com",
       "TelFixe": 66787632,
       "Gsm": 887705722,
-      "Deplacement": true,
-      "Adresse": {
-        "Rue": "Blake Avenue",
-        "NumeroRue": 7462,
-        "BoitePostal": 2,
-        "CodePostal": 6200,
-        "Ville": "Terlingua",
-        "Pays": "Belgium"
-      }
+      "Deplacement": true
     },
     {
       "Username": "Selena",
@@ -27,15 +19,7 @@
       "Email": "selenafernandez@comtrail.com",
       "TelFixe": 67620079,
       "Gsm": 750240585,
-      "Deplacement": true,
-      "Adresse": {
-        "Rue": "Dennett Place",
-        "NumeroRue": 1475,
-        "BoitePostal": 17,
-        "CodePostal": 6982,
-        "Ville": "Linganore",
-        "Pays": "Belgium"
-      }
+      "Deplacement": true
     },
     {
       "Username": "Carole",
@@ -46,15 +30,7 @@
       "Email": "carolehunt@comtrail.com",
       "TelFixe": 50472445,
       "Gsm": 672838476,
-      "Deplacement": false,
-      "Adresse": {
-        "Rue": "Ludlam Place",
-        "NumeroRue": 6246,
-        "BoitePostal": 4,
-        "CodePostal": 3389,
-        "Ville": "Ryderwood",
-        "Pays": "Belgium"
-      }
+      "Deplacement": false
     },
     {
       "Username": "Beryl",
@@ -65,15 +41,7 @@
       "Email": "berylharrison@comtrail.com",
       "TelFixe": 38653318,
       "Gsm": 703195692,
-      "Deplacement": true,
-      "Adresse": {
-        "Rue": "Robert Street",
-        "NumeroRue": 1603,
-        "BoitePostal": 12,
-        "CodePostal": 2854,
-        "Ville": "Lloyd",
-        "Pays": "Belgium"
-      }
+      "Deplacement": true
     },
     {
       "Username": "Marietta",
@@ -84,14 +52,6 @@
       "Email": "mariettatodd@comtrail.com",
       "TelFixe": 23127613,
       "Gsm": 389447009,
-      "Deplacement": false,
-      "Adresse": {
-        "Rue": "Wythe Place",
-        "NumeroRue": 4649,
-        "BoitePostal": 5,
-        "CodePostal": 9479,
-        "Ville": "Dawn",
-        "Pays": "Belgium"
-      }
+      "Deplacement": false
     }
   ]
