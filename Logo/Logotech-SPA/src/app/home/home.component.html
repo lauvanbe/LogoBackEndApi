@@ -1,0 +1,60 @@
+<div class="container mt-5">
+  <div *ngIf="!registerMode" style="text-align: center">
+    <h1>Trouver un rendez vous</h1>
+    <p class="lead">Entrez sur le site afin de voir les disponibilité de rendez vous dans l'agenda!</p>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg mr-2" (click)="registerToggle()">Enregistrement</button>
+    </div>
+  </div>
+
+  <div *ngIf="registerMode" class="container">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row  mt-4">
+  <div class="col-md-4">
+      <h2>Présentation du métier de logopède</h2>
+      <p>
+          Professionnel traitant les troubles de la communication concernant le langage,
+          la parole et la voix, appelé orthophoniste en France et logopédiste en Suisse.
+      </p>
+      <img src="/assets/ImageSite/Logopédie1.jpg" width="620px" height="300px"/>
+      <br/><br/>
+      <p><a class="btn btn-success" href="https://www.uplf.be/" target=_blank>En savoir plus sur le métier de logopède.</a></p>
+  </div>
+  <div class="col-md-4">
+      <h2>Video de présentation du métier de logopède</h2>
+      <p>
+          La logopédie est une discipline paramédicale.
+          La logopède exécute des actes de rééducation de la sphère oro-faciale.
+      </p>
+      <img src="/assets/ImageSite/slide-logopedie.png" width="620px" height="300px" /><br/><br/>
+      <p><a class="btn btn-success" href="https://www.youtube.com/watch?v=DoMxN5e1s_Y" target=_blank>Video de présentation du mérier de logopède.</a></p>
+  </div>
+  <div class="col-md-4">
+      <h2>La logopédie et l'enfance, les interactions</h2>
+      <p>
+          L’enseignant(e) ou les professionnels qui suivent votre enfant ont proposé des séances d’orthophonie
+          pour votre enfant. En quoi est ce que cela consiste ?.
+      </p>
+      <img src="/assets/ImageSite/logopedie2.jpg" width="620px" height="300px" /><br/><br/>
+      <p><a class="btn btn-success" href="http://www.enfant-different.org/" target=_blank>Enfant différent</a></p>
+  </div>
+</div>
+
+
+<div class=" mt-4">
+  <h2>Horaire des consultations :</h2>
+  <ul>
+      <li>Lundi de 08h30 à 12h30 et de 13h30 à 18h00.</li>
+      <li>Mardi de 08h30 à 12h30 et de 13h30 à 18h00.</li>
+      <li>Mercredi de 08h30 à 12h30.</li>
+      <li>Jeudi de 08h30 à 12h30 et de 13h30 à 18h00.</li>
+      <li>Vendredi de 08h30 à 12h30 et de 13h30 à 18h00.</li>
+  </ul>
+</div>
