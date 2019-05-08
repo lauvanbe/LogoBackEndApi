@@ -20,13 +20,4 @@ export class ListePraticiensComponent implements OnInit {
       this.praticiens = data['praticiens'];
     });
   }
-
-  // loadPraticiens() {
-  //   this.praticienService.getPraticiens().subscribe((praticiens: Praticien[]) => {
-  //     this.praticiens = praticiens;
-  //   }, error => {
-  //     this.alertify.error(error);
-  //   });
-  // }
-
 }

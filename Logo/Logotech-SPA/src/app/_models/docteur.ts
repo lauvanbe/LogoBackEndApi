@@ -10,5 +10,4 @@ export interface Docteur {
     gsm: number;
     specialisation: string;
     fonction: string;
-    adresse: Adresse;
 }

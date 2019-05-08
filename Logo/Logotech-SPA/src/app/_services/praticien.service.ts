@@ -19,4 +19,16 @@ export class PraticienService {
   getDocteur(id): Observable<Docteur> {
     return this.http.get<Docteur>(this.baseUrl + 'docteurs/' + id);
   }
+
+  addDocteur(docteur: Docteur) {
+    return this.http.post(this.baseUrl + 'docteurs', docteur);
+  }
+
+  updateDocteur(id: number, docteur: Docteur) {
+    return this.http.put(this.baseUrl + 'docteurs/edit/' + id, docteur);
+  }
+
+  deleteDocteur(id: number) {
+    return this.http.delete(this.baseUrl + 'docteurs/' + id);
+  }
 }

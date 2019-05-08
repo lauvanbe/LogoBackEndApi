@@ -14,15 +14,19 @@ export class PatientService {
     constructor(private http: HttpClient) { }
 
     getPatients(): Observable<Patient[]> {
-      return this.http.get<Patient[]>(this.baseUrl + 'Patients');
+      return this.http.get<Patient[]>(this.baseUrl + 'patients');
     }
 
     getPatient(id): Observable<Patient> {
-      return this.http.get<Patient>(this.baseUrl + 'Patients/' + id);
+      return this.http.get<Patient>(this.baseUrl + 'patients/' + id);
+    }
+
+    addPatient(patient: Patient) {
+      return this.http.post(this.baseUrl + 'patients' , patient);
     }
 
     updatePatient(id: number, patient: Patient) {
-      return this.http.put(this.baseUrl + 'Patients/edit/' + id, patient);
+      return this.http.put(this.baseUrl + 'patients/edit/' + id, patient);
     }
 
     setMainPhoto(patientId: number, id: number) {
