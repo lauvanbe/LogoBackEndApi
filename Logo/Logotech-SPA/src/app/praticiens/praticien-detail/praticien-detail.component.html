@@ -1,11 +1,23 @@
 <div class="container mt-4">
   <div class="row">
-    <h1>Profil de {{ praticien.prenom }} {{ praticien.nom }}</h1>
+    <h1>Update du profil de {{ praticien.prenom }} {{ praticien.nom }}</h1>
   </div>
   <div class="row">
     <div class="col-sm-4">
       <div class="card">
         <div class="card-body">
+          <div>
+            <strong>Nom:</strong>
+            <p>{{ praticien.nom }}</p>
+          </div>
+          <div>
+            <strong>Prénom:</strong>
+            <p>{{ praticien.prenom }}</p>
+          </div>
+          <div>
+            <strong>Email:</strong>
+            <p>{{ praticien.email }}</p>
+          </div>
           <div>
             <strong>Fonction:</strong>
             <p>{{ praticien.fonction }}</p>
@@ -21,12 +33,6 @@
           <div>
             <strong>Gsm:</strong>
             <p>{{ praticien.gsm }}</p>
-          </div>
-          <div class="card-footer">
-            <div class="btn-group d-flex">
-              <button class="btn btn-warning w-100">Modifier</button>
-              <button class="btn btn-danger w-100">Supprimer</button>
-            </div>
           </div>
       </div>
     </div>
