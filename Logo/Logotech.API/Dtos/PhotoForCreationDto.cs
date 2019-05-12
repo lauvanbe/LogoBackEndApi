@@ -1,3 +1,6 @@
+/* Données nécessaire pour l'ajout d'une photo liée a 
+un patient dans la partie front end. */
+
 using System;
 using Microsoft.AspNetCore.Http;
 

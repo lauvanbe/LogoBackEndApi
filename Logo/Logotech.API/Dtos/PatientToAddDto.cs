@@ -1,3 +1,5 @@
+/* Données nécessaire pour l'ajout d'un patient dans la partie front end. */
+
 using System;
 using System.Collections.Generic;
 using Logotech.API.Models;

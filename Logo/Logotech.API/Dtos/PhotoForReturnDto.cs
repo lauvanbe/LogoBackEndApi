@@ -1,3 +1,6 @@
+/* Données nécessaire pour l'affichage d'une photo
+d'un patient dans la partie front end. */
+
 using System;
 
 namespace Logotech.API.Dtos

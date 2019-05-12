@@ -1,5 +1,9 @@
 using Microsoft.AspNetCore.Http;
 
+/* Classe permettant la transmission des erreurs de l'API back end vers la partie front end Angular. 
+Ceci permet un meilleur contrôle des erreurs, 
+et aussi permet de mieux les personnalisées par la transmission d'un message */
+
 namespace Logotech.API.Helpers
 {
     public static class Extensions

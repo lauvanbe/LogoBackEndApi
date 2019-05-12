@@ -1,5 +1,7 @@
 using System;
 
+/* Modèle de données pour les photos */
+
 namespace Logotech.API.Models
 {
     public class Photo

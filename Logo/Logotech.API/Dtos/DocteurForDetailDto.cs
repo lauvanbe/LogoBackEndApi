@@ -1,3 +1,5 @@
+/* Données nécessaire pour l'affichage du détail d'un docteurs dans la partie front end. */
+
 using System.Collections.Generic;
 using Logotech.API.Models;
 

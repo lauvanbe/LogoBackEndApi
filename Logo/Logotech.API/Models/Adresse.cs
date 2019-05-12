@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
+/* Modèle de données pour les adresses des patients */
+
 namespace Logotech.API.Models
 {
     public class Adresse

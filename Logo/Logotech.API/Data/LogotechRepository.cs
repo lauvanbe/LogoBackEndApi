@@ -1,3 +1,5 @@
+/* Classe reprennant  l'implémantation des méthodes CRUD */
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

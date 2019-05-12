@@ -1,3 +1,5 @@
+/* Données nécessaire pour l'update des docteurs dans la partie front end. */
+
 using Logotech.API.Models;
 
 namespace Logotech.API.Dtos

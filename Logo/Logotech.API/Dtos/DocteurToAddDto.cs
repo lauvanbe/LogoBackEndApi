@@ -1,3 +1,5 @@
+/* Données nécessaire pour l'ajout d'un docteur dans la partie front end. */
+
 using Logotech.API.Models;
 
 namespace Logotech.API.Dtos

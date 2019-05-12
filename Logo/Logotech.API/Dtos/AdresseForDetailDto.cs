@@ -1,3 +1,5 @@
+/* Données nécessaire pour l'affichage de l'adresse dans la partie front end. */
+
 namespace Logotech.API.Dtos
 {
     public class AdresseForDetailDto

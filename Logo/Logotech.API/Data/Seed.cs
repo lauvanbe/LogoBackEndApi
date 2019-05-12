@@ -1,3 +1,8 @@
+/* Ensemble de méthodes permettant de push des données préencodée sur la base de données.
+Ceci permet d'éviter de devoir toujours remplir manuellement la base de données.
+Nous avons créé des fichier .json et nous les avons remplis avec les données nécessaire 
+au remplissage de tout les champs de la DB. */
+
 using System.Collections.Generic;
 using Logotech.API.Models;
 using Newtonsoft.Json;
@@ -11,18 +16,6 @@ namespace Logotech.API.Data
         {
             _context = context;
         }
-
-        // public void SeedAdresse()
-        // {
-        //     var adresseData = System.IO.File.ReadAllText("Data/SeedDataAdresse.json");
-        //     var adresses = JsonConvert.DeserializeObject<List<Adresse>>(adresseData);
-        //     foreach (var adresse in adresses)
-        //     {
-        //         _context.Adresses.Add(adresse);
-        //     }
-            
-        //     _context.SaveChanges();
-        // }
 
         public void SeedUsers()
         {

@@ -1,3 +1,6 @@
+/* Interface reprennant les méthodes à implémentées pour l'authentification
+d'une logopède, utilisatrice de l'application */
+
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Logotech.API.Models;

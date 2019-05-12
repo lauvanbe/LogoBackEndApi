@@ -1,3 +1,6 @@
+/* Classe implémentant les méthodes nécessaire pour l'authentification
+d'une logopède, utilisatrice de l'application */
+
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

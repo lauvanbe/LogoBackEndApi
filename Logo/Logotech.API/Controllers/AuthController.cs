@@ -1,3 +1,5 @@
+/* Contrôleur reprennant les méthodes d'authentification des logopèdes */
+
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;

@@ -1,6 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
+/* Modèle de données pour les logopèdes, 
+seules utilisateurs de l'application actuellement */
+
 namespace Logotech.API.Models
 {
     public class User

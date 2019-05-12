@@ -1,3 +1,6 @@
+/* Classe permettant de faire le lien entre les modèles des données et la base de données
+par l'intermédiaire du framework entity */
+
 using Logotech.API.Models;
 using Microsoft.EntityFrameworkCore;
 

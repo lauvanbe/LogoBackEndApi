@@ -1,3 +1,5 @@
+/* Contrôleur reprennant les méthodes d'accès aux données des photos */
+
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;

@@ -1,3 +1,5 @@
+/* Interface reprennant l'ensemble des méthodes standard CRUD à implémentées pour l'accès aux données */
+
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Logotech.API.Models;

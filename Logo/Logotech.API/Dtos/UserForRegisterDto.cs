@@ -1,3 +1,6 @@
+/* Données nécessaire pour l'ajout / enregistrement d'une logopède utilisatrice
+de l'application dans la partie front end. */
+
 using System.ComponentModel.DataAnnotations;
 using Logotech.API.Models;
 

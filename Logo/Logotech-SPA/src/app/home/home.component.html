@@ -16,7 +16,7 @@
   </div>
 </div>
 
-<div class="conatiner mt-4 text-center">
+<div *ngIf="!registerMode" class="conatiner mt-4 text-center">
   <h2>Horaire des consultations :</h2>
   <ul class="list-group lead">
       <li>Lundi de 08h30 à 12h30 et de 13h30 à 18h00.</li>
@@ -27,7 +27,7 @@
   </ul>
 </div>
 
-<div class="container mt-5">
+<div *ngIf="!registerMode" class="container mt-5">
   <div class="container text-center">
       <h2>Présentation du métier de logopède</h2>
       <p class="lead">

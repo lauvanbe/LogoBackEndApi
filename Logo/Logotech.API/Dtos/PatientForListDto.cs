@@ -1,3 +1,5 @@
+/* Données nécessaire pour l'affichage de la liste des patients dans la partie front end. */
+
 using System;
 using System.Collections.Generic;
 using Logotech.API.Models;
