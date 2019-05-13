@@ -5,9 +5,9 @@ export interface User {
   inami: number;
   nom: string;
   prenom: string;
-  emai: string;
+  email: string;
   deplacement: string;
   adresse: Adresse;
   telFixe?: number;
-  Gsm?: number;
+  gsm?: number;
 }

@@ -1,0 +1,28 @@
+<div class="container mt-4">
+  <div class="row">
+    <h1> Editer votre rofile </h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <form>
+        <div>
+          <label for="nom">Nom: </label>
+          <input type="text" class="form-control" name="nom" [(ngModel)]="user.nom">
+          <label for="prenom">Prénom: </label>
+          <input type="text" class="form-control" name="prenom" [(ngModel)]="user.prenom">
+          <label for="inami">Inami: </label>
+          <input type="text" class="form-control" name="inami" [(ngModel)]="user.inami">
+          <label for="email">Email: </label>
+          <input type="text" class="form-control" name="email" [(ngModel)]="user.email">
+          <label for="telfixe">Téléphone fixe: </label>
+          <input type="text" class="form-control" name="telfixe" [(ngModel)]="user.telFixe">
+          <label for="gsm">Gsm: </label>
+          <input type="text" class="form-control" name="gsm" [(ngModel)]="user.gsm">
+        </div>
+      </form>
+      <div>
+        <button class="btn btn-primary w-100">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>

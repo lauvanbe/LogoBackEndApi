@@ -13,6 +13,9 @@ import { PatientDetailResolver } from './_resolvers/patient-detail.resolver';
 import { PatientEditComponent } from './patients/patient-edit/patient-edit.component';
 import { PatientEditResolver } from './_resolvers/patient-edit.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
+import { UserEditComponent } from './users/user-edit/user-edit.component';
+import { UserDetailResolver } from './_resolvers/user-detail.resolver.1';
+import { UserEditResolver } from './_resolvers/user-edit.resolver';
 
 export const appRoutes: Routes = [
     { path: '', component: HomeComponent},
@@ -21,6 +24,7 @@ export const appRoutes: Routes = [
         runGuardsAndResolvers: 'always',
         canActivate: [AuthGuard],
         children: [
+            { path: 'user/edit', component: UserEditComponent, resolve: {user: UserEditResolver}},
             { path: 'liste-praticiens', component: ListePraticiensComponent,
                 resolve: { praticiens: PraticienListeResolver }},
             { path: 'liste-praticiens/:id', component: PraticienDetailComponent,

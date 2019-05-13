@@ -34,6 +34,9 @@ import { PatientEditComponent } from './patients/patient-edit/patient-edit.compo
 import { PatientEditResolver } from './_resolvers/patient-edit.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './patients/photo-editor/photo-editor.component';
+import { UserEditComponent } from './users/user-edit/user-edit.component';
+import { UserEditResolver } from './_resolvers/user-edit.resolver';
+import { UserDetailResolver } from './_resolvers/user-detail.resolver.1';
 
 
 
@@ -48,6 +51,7 @@ export function tokenGetter() {
       NavComponent,
       HomeComponent,
       RegisterComponent,
+      UserEditComponent,
       ListePatientsComponent,
       PatientCardComponent,
       PatientDetailComponent,
@@ -82,6 +86,8 @@ export function tokenGetter() {
       AlertifyService,
       AuthGuard,
       PreventUnsavedChanges,
+      UserEditResolver,
+      UserDetailResolver,
       PraticienService,
       PraticienDetailResolver,
       PraticienListeResolver,
